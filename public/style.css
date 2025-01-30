@@ -1,0 +1,123 @@
+
+   
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    background-image: url('heart.jpg');
+    background-size: 50%; 
+    background-position: center center; 
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+  }
+  
+  
+  .header {
+    background-color: #f44336;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #calendar div {
+    padding: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  #calendar div:hover {
+    background-color: #c0c0c0;
+  }
+  
+  #calendar div.current-day {
+    background-color: lightgreen;
+  }
+  
+  #calendar div.selected {
+    background-color: lightblue;
+  }
+  
+  
+  #taskInput {
+    width: calc(100% - 100px);
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #addButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #addButton:hover {
+    background-color: #45a049;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  ul li {
+    padding: 12px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  ul li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  ul li.checked {
+    background-color: #888;
+    color: white;
+    text-decoration: line-through;
+  }
+  
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  
